@@ -46,7 +46,6 @@ for i in range(16):
     
 all_documents = pd.DataFrame(all_docs)
     
-RTV = pd.read_csv('RTV.txt')
 
 #http://stevenloria.com/finding-important-words-in-a-document-using-tf-idf/
 
@@ -79,4 +78,17 @@ for i, blob in enumerate(blob_list):
     for word, score in sorted_words[:10]:
         print("\tWord: {}, TF-IDF: {}".format(word, round(score, 5)))
         
-        
+##Read in RTV and check frequencies
+RTV = pd.read_csv('RTV.txt',header=None)
+RTV.columns = ['word']
+
+RTVblob = tb(str(tuple(RTV.word.tolist())).replace("'", ""))
+
+tf_list = []
+for i, blob in enumerate(blob_list):
+    for word in RTVblob.words:
+        tf_list.append({'DSInum': DSI_list[i], 'word': word, 'term_freq': blob.words.count(word)})
+
+#print pd.DataFrame(tf_list)
+tf_df = pd.DataFrame(tf_list)
+tf_df.to_csv("RTV_frequencies.txt", sep='\t')
