@@ -1,126 +1,126 @@
-	word	24	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y
-0	administration	3	4	4	0	2	1	0	4	1	2	1	0	0
-1	american energy	0	0	0	0	0	0	0	0	0	0	0	0	0
-2	bank	0	1	0	0	0	0	0	0	2	0	0	0	0
-3	barack obama	0	0	0	0	0	0	0	0	0	0	0	0	0
-4	border	0	1	0	0	0	0	9	0	0	2	0	0	0
-5	bridge	0	0	0	0	0	0	0	0	0	0	0	0	0
-6	business	0	2	0	0	0	0	0	2	7	0	0	0	0
-7	campaign	0	4	4	0	1	0	3	0	0	2	0	0	0
-8	climate change	0	0	0	0	0	0	0	0	0	0	0	0	0
-9	congress	0	1	2	0	0	0	4	0	0	3	0	0	0
-10	conservative	0	2	0	0	0	0	0	0	0	0	0	0	1
-11	democracy	0	0	0	0	0	0	0	0	0	0	0	0	0
-12	democrat	0	0	1	0	0	0	0	0	0	0	0	0	0
-13	democratic party	0	0	0	0	0	0	0	0	0	0	0	0	0
-14	economy	0	1	0	0	0	2	0	1	3	1	0	0	0
-15	election	0	0	2	0	0	0	0	0	3	0	0	0	0
-16	energy	10	2	0	0	6	0	0	0	0	0	0	0	0
-17	environment	1	1	0	0	0	0	0	0	0	0	0	0	0
-18	government	0	4	2	0	1	0	3	0	0	2	0	2	0
-19	hack	0	0	0	0	0	0	0	0	0	0	0	0	0
-20	hillary clinton	0	0	0	0	0	0	0	0	0	0	0	0	0
-21	house republican	0	0	0	0	0	0	0	0	0	0	0	0	0
-22	immigrant	0	0	0	0	0	0	0	0	0	0	0	0	0
-23	immigration	0	2	0	0	0	0	0	0	0	0	1	0	0
-24	intelligence agency	0	0	0	0	0	0	0	0	0	0	0	0	0
-25	keystone pipeline	0	0	0	0	0	0	0	0	0	0	0	0	0
-26	lawmaker	0	0	0	0	0	0	0	0	0	0	0	0	0
-27	leader	0	2	0	0	0	0	1	0	0	0	1	0	2
-28	legislation	0	2	0	0	0	0	0	0	0	0	0	0	0
-29	media	0	0	4	0	0	0	0	0	0	0	0	0	0
-30	mexico	0	0	0	0	0	0	6	1	0	2	0	0	0
-31	money	0	1	0	0	0	0	0	0	1	1	0	0	0
-32	moscow	0	0	3	0	0	0	0	0	0	0	0	0	0
-33	obamacare	0	10	0	0	0	0	0	0	0	0	0	0	0
-34	party	0	2	0	0	0	2	0	0	0	1	0	0	0
-35	power	5	0	3	0	6	0	0	0	0	4	0	0	0
-36	presidency	0	0	0	0	0	0	0	0	0	0	0	0	0
-37	president	3	54	7	5	3	3	3	0	7	1	6	2	1
-38	president elect	0	0	0	0	0	0	0	0	0	0	0	0	0
-39	regulation	2	0	0	0	2	0	0	0	0	0	0	0	0
-40	republican	0	2	0	0	0	0	1	0	0	0	0	0	3
-41	republican lawmakers	0	0	0	0	0	0	0	0	0	0	0	0	0
-42	republican leaders	0	0	0	0	0	0	0	0	0	0	0	0	0
-43	restriction	0	0	0	0	0	0	0	0	0	0	0	0	0
-44	russia	0	1	15	0	0	0	0	0	0	0	0	0	0
-45	russian	0	0	8	0	0	0	0	0	0	0	0	0	0
-46	sanction	0	0	0	0	0	0	0	0	0	0	0	0	0
-47	secretary	1	5	0	18	1	1	1	1	0	0	1	1	0
-48	tax break	0	0	0	0	0	0	0	0	0	0	0	0	0
-49	terrorist	0	0	0	0	0	0	0	0	0	0	0	0	0
-50	transition staff	0	0	0	0	0	0	0	0	0	0	0	0	0
-51	transpacifict partnership	0	0	0	0	0	0	0	0	0	0	0	0	0
-52	tweet	0	2	0	0	0	0	0	0	0	0	0	0	0
-53	twitter	0	0	2	0	0	0	0	0	0	0	2	0	0
-54	vladimir putin	0	0	0	0	0	0	0	0	0	0	0	0	0
-55	vote	0	29	1	0	0	1	0	0	0	0	0	0	2
-56	voter	0	0	5	0	0	0	0	0	0	0	0	0	0
-57	wall	0	1	0	0	0	0	4	1	0	3	0	0	0
-58	war	1	0	0	0	0	0	0	0	0	0	0	0	0
-59	washington	0	3	2	0	0	0	0	1	0	1	1	0	0
-60	white house	0	0	0	0	0	0	0	0	0	0	0	0	0
-61	hiring freeze	0	0	0	0	0	0	0	0	0	0	0	0	0
-62	job	2	1	1	0	0	0	0	0	0	0	0	6	0
-63	order	8	7	2	9	8	0	1	0	0	0	5	4	0
-64	uncertainty	0	0	0	0	0	0	0	0	0	0	0	1	0
-65	work	1	6	2	0	0	0	1	0	0	0	0	1	0
-66	freedom caucus	0	0	0	0	0	0	0	0	0	0	0	0	0
-67	gerrymander	0	0	0	0	0	0	0	0	0	0	0	0	0
-68	house of representatives	0	0	0	0	0	0	0	0	0	0	0	0	0
-69	jobs	1	5	0	0	4	0	0	1	0	1	0	0	0
-70	executive order	0	0	0	0	0	0	0	0	0	0	0	0	0
-71	internet user	0	0	0	0	0	0	0	0	0	0	0	0	0
-72	sensitive information	0	0	0	0	0	0	0	0	0	0	0	0	0
-73	internet history	0	0	0	0	0	0	0	0	0	0	0	0	0
-74	federal communications commission	0	0	0	0	0	0	0	0	0	0	0	0	0
-75	virtual private network	0	0	0	0	0	0	0	0	0	0	0	0	0
-76	consumer permission	0	0	0	0	0	0	0	0	0	0	0	0	0
-77	coal miners	0	0	0	0	0	0	0	0	0	0	0	0	0
-78	environmental regulation	0	0	0	0	0	0	0	0	0	0	0	0	0
-79	Middle-Eastern countries	0	0	0	0	0	0	0	0	0	0	0	0	0
-80	emergency stay	0	0	0	0	0	0	0	0	0	0	0	0	0
-81	our country	0	0	0	0	0	0	0	0	0	0	0	0	0
-82	refugees	0	0	0	0	0	0	0	0	0	0	1	0	0
-83	travel ban	0	0	0	0	0	0	0	0	0	0	0	0	0
-84	japan	0	1	0	0	0	0	0	4	0	0	0	0	0
-85	navarro	0	0	0	0	0	0	0	5	0	0	0	0	0
-86	trade deficit	0	0	0	0	0	0	0	0	0	0	0	0	0
-87	trading partners	0	0	0	0	0	0	0	0	0	0	0	0	0
-88	military action	0	0	0	0	0	0	0	0	0	0	0	0	0
-89	missile	0	0	0	0	0	0	0	0	0	0	0	0	0
-90	north korea	0	0	0	0	0	0	0	0	0	0	0	0	0
-91	nuclear testing	0	0	0	0	0	0	0	0	0	0	0	0	0
-92	rex tillerson	0	0	0	0	0	0	0	0	0	0	0	0	0
-93	south korea	0	0	0	0	0	0	0	0	0	0	0	0	0
-94	threats	0	0	0	0	0	0	0	0	0	0	0	0	0
-95	christopher steele	0	0	0	0	0	0	0	0	0	0	0	0	0
-96	fbi	0	0	17	0	0	0	0	0	0	1	0	0	0
-97	kremlin election involvement	0	0	0	0	0	0	0	0	0	0	0	0	0
-98	mickhail kulagin	0	0	0	0	0	0	0	0	0	0	0	0	0
-99	bankruptcy	0	0	0	0	0	0	0	0	0	0	0	0	0
-100	bill	0	17	0	0	0	4	0	0	0	2	0	0	1
-101	healthcare	0	12	0	0	0	0	0	0	0	0	0	0	0
-102	reform	0	12	0	0	0	0	0	0	0	0	0	0	0
-103	foreign country	0	0	0	0	0	0	0	0	0	0	0	0	0
-104	lawful resistriction	0	0	0	0	0	0	0	0	0	0	0	0	0
-105	public safety	0	0	0	0	0	0	0	0	0	0	0	0	0
-106	travel	0	0	0	0	0	0	1	0	0	0	2	0	0
-107	united states	0	0	0	0	0	0	0	0	0	0	0	0	0
-108	american healthcare act	0	0	0	0	0	0	0	0	0	0	0	0	0
-109	deductibles	0	3	0	0	0	0	0	0	0	0	0	0	0
-110	premiums	0	2	0	0	0	0	0	0	0	0	0	0	0
-111	repeal and replace	0	0	0	0	0	0	0	0	0	0	0	0	0
-112	ryan	0	8	0	0	0	0	1	0	0	0	0	0	0
-113	construction	0	1	0	0	0	0	6	0	0	0	0	0	0
-114	cost	2	3	0	0	0	0	2	0	0	0	0	0	0
-115	department of homeland security	0	0	0	0	0	0	0	0	0	0	0	0	0
-116	U.S.MexicoBorder	0	0	0	0	0	0	0	0	0	0	0	0	0
-117	community	0	1	3	0	0	0	0	0	1	1	0	0	0
-118	small business	0	0	0	0	0	0	0	0	0	0	0	0	0
-119	small business confidence	0	0	0	0	0	0	0	0	0	0	0	0	0
-120	affordable care act	0	0	0	0	0	0	0	0	0	0	0	0	0
-121	regulations	5	2	0	0	2	0	0	0	3	1	0	0	0
-122	small business community	0	0	0	0	0	0	0	0	0	0	0	0	0
-123	united states economy	0	0	0	0	0	0	0	0	0	0	0	0	0
-124	tax overhaul	0	0	0	0	0	0	0	0	0	0	0	0	0
+	word	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y
+0	administration	3	0	1	1	1	0	0	0	0	1	2	2	1	2	1	0	3	1	2	3	1	0	1	3	4	4	0	2	1	0	4	1	2	1	0	0	2	0
+1	american energy	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+2	bank	0	0	0	0	0	0	0	0	12	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	2	0	0	0	0	0	0
+3	barack obama	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+4	border	0	0	0	0	0	0	1	1	0	0	0	0	0	0	6	0	0	8	1	0	0	0	0	0	1	0	0	0	0	9	0	0	2	0	0	0	0	0
+5	bridge	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+6	business	0	0	0	2	0	1	1	1	1	0	0	0	0	8	0	1	0	0	3	0	0	0	1	0	2	0	0	0	0	0	2	7	0	0	0	0	0	0
+7	campaign	0	0	0	0	2	0	0	1	2	1	1	0	0	3	0	3	2	2	8	0	0	3	1	0	4	4	0	1	0	3	0	0	2	0	0	0	1	0
+8	climate change	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+9	congress	0	0	2	1	0	0	0	2	2	0	0	1	0	0	3	0	1	1	0	2	0	0	0	0	1	2	0	0	0	4	0	0	3	0	0	0	0	0
+10	conservative	0	0	0	1	0	0	0	1	0	8	0	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	0	0	0	0	0	0	0	0	4	0	0	1
+11	democracy	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+12	democrat	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0
+13	democratic party	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+14	economy	0	0	0	0	0	0	2	1	1	0	0	0	0	0	0	0	2	0	2	0	0	0	0	0	1	0	0	0	2	0	1	3	1	0	1	0	0	0
+15	election	0	0	0	0	0	0	0	0	1	0	2	0	2	5	0	0	5	0	1	0	2	6	0	0	0	2	0	0	0	0	0	3	0	0	1	0	0	0
+16	energy	10	1	3	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	14	8	11	0	0	10	2	0	0	6	0	0	0	0	0	0	0	0	0	0
+17	environment	1	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+18	government	0	0	2	0	2	0	0	0	3	0	0	2	1	8	4	2	3	2	2	0	0	0	0	0	4	2	0	1	0	3	0	0	2	0	0	2	3	0
+19	hack	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+20	hillary clinton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+21	house republican	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+22	immigrant	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+23	immigration	0	0	2	0	1	0	0	2	0	1	0	1	0	0	0	0	1	1	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	1	0	0	0	0
+24	intelligence agency	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+25	keystone pipeline	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+26	lawmaker	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+27	leader	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	1	1	0	0	3	1	0	0	2	0	0	0	0	1	0	0	0	1	0	0	0	2
+28	legislation	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
+29	media	0	0	0	0	0	1	0	0	0	0	0	0	3	0	0	0	0	1	0	0	0	0	4	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0
+30	mexico	0	0	1	0	0	0	9	4	0	0	0	0	0	1	1	0	5	3	1	0	0	0	0	0	0	0	0	0	0	6	1	0	2	0	0	0	1	0
+31	money	0	0	2	0	0	2	0	0	2	0	0	0	0	0	3	0	0	2	0	0	0	0	0	0	1	0	0	0	0	0	0	1	1	0	0	0	0	0
+32	moscow	0	1	0	0	0	0	0	0	0	0	2	0	2	0	0	0	0	0	0	0	0	1	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0
+33	obamacare	0	0	1	1	0	0	0	1	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	3	0	0	0
+34	party	0	0	0	0	0	0	0	0	0	0	1	0	1	1	1	0	4	0	0	0	0	1	0	0	2	0	0	0	2	0	0	0	1	0	3	0	0	0
+35	power	5	0	0	0	1	0	0	1	2	1	0	0	0	0	0	0	1	0	5	4	1	0	0	5	0	3	0	6	0	0	0	0	4	0	3	0	0	0
+36	presidency	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+37	president	3	2	1	0	3	3	4	2	0	3	6	2	9	13	2	0	6	2	2	2	5	6	7	3	54	7	5	3	3	3	0	7	1	6	1	2	2	1
+38	president elect	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+39	regulation	2	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	2	0	0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0	0	0
+40	republican	0	1	0	1	1	0	0	1	0	1	0	2	1	0	1	0	0	2	1	0	0	4	0	0	2	0	0	0	0	1	0	0	0	0	6	0	0	3
+41	republican lawmakers	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+42	republican leaders	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+43	restriction	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+44	russia	0	3	0	0	0	0	0	0	0	0	4	0	11	0	0	0	0	0	0	0	0	13	2	0	1	15	0	0	0	0	0	0	0	0	0	0	0	0
+45	russian	0	1	0	0	0	0	0	0	0	0	5	0	6	0	0	0	0	0	0	0	0	4	2	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0
+46	sanction	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+47	secretary	1	0	2	0	1	1	0	1	1	0	0	0	1	3	0	2	0	1	0	0	1	0	0	1	5	0	18	1	1	1	1	0	0	1	0	1	0	0
+48	tax break	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+49	terrorist	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+50	transition staff	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+51	transpacifict partnership	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+52	tweet	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
+53	twitter	0	2	0	0	0	1	1	0	0	0	0	0	2	0	1	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	2	2	0	0	0
+54	vladimir putin	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+55	vote	0	0	0	0	0	0	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	2	0	0	29	1	0	0	1	0	0	0	0	0	0	0	0	2
+56	voter	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0
+57	wall	0	0	1	0	0	0	0	1	0	0	0	0	0	0	10	0	0	5	0	0	0	0	0	0	1	0	0	0	0	4	1	0	3	0	0	0	0	0
+58	war	1	0	0	0	0	0	0	2	0	0	1	0	1	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+59	washington	0	0	2	0	1	0	0	0	1	0	2	0	1	4	0	1	0	0	1	0	2	0	0	0	3	2	0	0	0	0	1	0	1	1	1	0	0	0
+60	white house	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+61	hiring freeze	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+62	job	2	0	1	0	0	0	2	2	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	2	1	1	0	0	0	0	0	0	0	0	0	6	1	0
+63	order	8	0	2	0	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	1	0	8	7	2	9	8	0	1	0	0	0	5	0	4	0	0
+64	uncertainty	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+65	work	1	0	1	0	1	0	0	1	0	0	0	2	1	0	1	1	1	0	0	0	1	0	0	1	6	2	0	0	0	1	0	0	0	0	1	1	0	0
+66	freedom caucus	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+67	gerrymander	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
+68	house of representatives	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+69	jobs	1	0	1	0	0	0	6	1	3	0	0	0	0	3	0	0	1	0	3	0	0	0	0	1	5	0	0	4	0	0	1	0	1	0	1	0	2	0
+70	executive order	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+71	internet user	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+72	sensitive information	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+73	internet history	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+74	federal communications commission	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+75	virtual private network	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+76	consumer permission	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+77	coal miners	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+78	environmental regulation	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+79	Middle-Eastern countries	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+80	emergency stay	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+81	our country	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+82	refugees	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+83	travel ban	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+84	japan	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	4	0	0	0	0	0	2	0
+85	navarro	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0
+86	trade deficit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+87	trading partners	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+88	military action	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+89	missile	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+90	north korea	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+91	nuclear testing	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+92	rex tillerson	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+93	south korea	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+94	threats	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+95	christopher steele	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+96	fbi	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	17	0	0	0	0	0	0	1	0	0	0	0	0
+97	kremlin election involvement	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+98	mickhail kulagin	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+99	bankruptcy	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+100	bill	0	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	1	0	1	0	0	0	0	0	17	0	0	0	4	0	0	0	2	0	2	0	0	1
+101	healthcare	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0
+102	reform	0	0	0	4	0	0	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0
+103	foreign country	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+104	lawful resistriction	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+105	public safety	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+106	travel	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	2	0	0	0	0
+107	united states	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+108	american healthcare act	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+109	deductibles	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
+110	premiums	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
+111	repeal and replace	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+112	ryan	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	1	0	0	0	0	7	0	0	0
+113	construction	0	0	1	0	0	0	0	0	3	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	1	0	0	0	0	6	0	0	0	0	0	0	0	0
+114	cost	2	0	1	0	0	0	0	2	3	0	0	0	0	0	3	0	0	1	0	0	0	0	0	2	3	0	0	0	0	2	0	0	0	0	0	0	0	0
+115	department of homeland security	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+116	U.S.MexicoBorder	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+117	community	0	0	1	0	0	0	0	0	0	0	0	0	8	0	0	1	1	0	0	1	0	3	0	0	1	3	0	0	0	0	0	1	1	0	0	0	0	0
+118	small business	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+119	small business confidence	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+120	affordable care act	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+121	regulations	5	0	0	0	0	0	0	1	0	0	0	0	0	1	0	0	1	0	2	2	0	0	0	5	2	0	0	2	0	0	0	3	1	0	0	0	0	0
+122	small business community	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+123	united states economy	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+124	tax overhaul	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
