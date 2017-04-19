@@ -43,7 +43,7 @@ def tfidf(word, blob, bloblist):
     return tf2(word, blob) * idf(word, bloblist)
 
 
-# In[18]:
+# In[50]:
 
 import sys
 import re
@@ -53,6 +53,7 @@ import re
 os.chdir('/users/asheets/Documents/Work_Computer_new/Work_Computer/Grad_School/PREDICT_453/Notebooks/DSI/')
 
 all_docs = []
+all_docs2 = ""
 blob_list = []
 d = 1
 
@@ -74,6 +75,7 @@ for i in range(40):
         sample2 = " ".join(k for k in tb(sample).noun_phrases)
         all_docs.append({'DSInum': d, 'raw_text': sample, 'noun_phrases_only':
         sample2})
+        all_docs2 = all_docs2 + sample2
         blob_list.append(tb(sample2))
         d = d + 1
     except IOError:
@@ -83,13 +85,18 @@ for i in range(40):
 all_documents = pd.DataFrame(all_docs)
 
 
-# In[19]:
+# In[63]:
 
 #compare my article
 blob1 = tb(all_documents['noun_phrases_only'][23])
+allblob = tb(all_docs2)
+print 'there are' , len(blob1.words) , 'words in DSI 24'
+print 'there are' , len(allblob.words) , 'words across the entire Corpus'
 term_freq = [tf1(word,blob1) for word in blob1.words]
 term_rel_freq = [tf2(word,blob1) for word in blob1.words]
-tf_df1 = pd.DataFrame({'word': blob1.words, 'doc1_term_freq': term_freq, 'doc1_term_rel_freq': term_rel_freq})
+all_docs_term_freq = [tf1(word,allblob) for word in blob1.words]
+all_docs_term_rel_freq = [tf2(word,allblob) for word in blob1.words]
+tf_df1 = pd.DataFrame({'word': blob1.words, 'all_docs_term_freq': all_docs_term_freq, 'doc1_term_freq': term_freq, 'all_docs_term_rel_freq': all_docs_term_rel_freq, 'doc1_term_rel_freq': term_rel_freq})
 
 docs_containing1 = pd.DataFrame({'word': blob1.words, 'doc_freq': [n_containing(word,blob_list) for word in blob1.words]})
 
@@ -100,14 +107,19 @@ df['idf'] = df['intermediate_calc'].apply(math.log)
 df = df.sort_values("idf",ascending=True)
 
 tfidf_df = pd.DataFrame({'word': blob1.words, 'tf_idf_doc1': [tfidf(word, blob1, blob_list) for word in blob1.words]})
+tfidf_df_all = pd.DataFrame({'word': blob1.words, 'tf_idf_all_docs': [tfidf(word, allblob, blob_list) for word in blob1.words]})
+tf_idf = pd.merge(tfidf_df,tfidf_df_all,on='word',how='outer').drop_duplicates()
 
-df = pd.merge(df,tfidf_df,on='word',how='outer').drop_duplicates()
-df_final = df[["word","doc1_term_freq","doc1_term_rel_freq","doc_freq","idf","tf_idf_doc1"]]
-df_final.sort_values(by=['tf_idf_doc1'], ascending=[False]).head(n=10)
+df = pd.merge(df,tf_idf,on='word',how='outer').drop_duplicates()
+
+df_final = df[["word","doc1_term_freq","all_docs_term_freq","all_docs_term_rel_freq","doc1_term_rel_freq","doc_freq","idf","tf_idf_all_docs","tf_idf_doc1"]]
+df_final = df_final.sort_values(by=['tf_idf_doc1'], ascending=[False])
 df_final.to_csv("/users/asheets/Documents/Work_Computer_new/Work_Computer/Grad_School/PREDICT_453/Notebooks/DSI24_tfidf.txt", sep='\t')
+df_final = df_final.round(4)
+df_final.sort_values(by=['tf_idf_doc1'], ascending=[False]).head(n=10)
 
 
-# In[21]:
+# In[27]:
 
 ##Compare just the two articles we know to be similar
 blob2 = tb(all_documents['noun_phrases_only'][27])
@@ -133,7 +145,7 @@ scores2 = pd.DataFrame({'word': blob2.words, 'tf_idf_doc2': [tfidf(word, blob2, 
 two_tfidf= pd.merge(scores1,scores2,on='word',how='outer').drop_duplicates()
 two_tfidf = two_tfidf[['word', 'tf_idf_doc1', 'tf_idf_doc2']]
 two_tfidf = two_tfidf.sort_values(by=['tf_idf_doc1', 'tf_idf_doc2'], ascending=[False,False])
-two_tfidf.head(n=6)
+two_tfidf.head(n=15)
 
 
 # In[22]:
@@ -150,7 +162,7 @@ for i, blob in enumerate(blob_list):
         
 
 
-# In[25]:
+# In[80]:
 
 RTV = pd.read_csv('RTV.txt',header=None)
 RTV.columns = ['word']
@@ -179,10 +191,15 @@ for i in range(1,38):
     except IOError:
         pass  
 
+
+my_columns = ["word"]
+for i in DSI_list:
+    my_columns.append('DSI' + str(i))
+new_tf.columns = my_columns
 new_tf.to_csv("RTV_frequencies2.txt", sep='\t')
 
 
-# In[26]:
+# In[79]:
 
 new_tf
 

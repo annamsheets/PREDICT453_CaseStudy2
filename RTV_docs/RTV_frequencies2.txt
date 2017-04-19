@@ -1,4 +1,4 @@
-	word	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y	term_freq_x	term_freq_y
+	word	DSI1	DSI2	DSI3	DSI4	DSI5	DSI6	DSI7	DSI8	DSI9	DSI10	DSI11	DSI12	DSI13	DSI14	DSI15	DSI16	DSI17	DSI18	DSI19	DSI20	DSI21	DSI22	DSI23	DSI24	DSI25	DSI26	DSI27	DSI28	DSI29	DSI30	DSI31	DSI32	DSI33	DSI34	DSI35	DSI36	DSI37	DSI39
 0	administration	3	0	1	1	1	0	0	0	0	1	2	2	1	2	1	0	3	1	2	3	1	0	1	3	4	4	0	2	1	0	4	1	2	1	0	0	2	0
 1	american energy	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 2	bank	0	0	0	0	0	0	0	0	12	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	2	0	0	0	0	0	0
