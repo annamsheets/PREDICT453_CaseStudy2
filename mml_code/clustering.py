@@ -19,6 +19,7 @@ import matplotlib.pyplot as plt
 stopwords = nltk.corpus.stopwords.words('english')
 
 ## this data structure holds info about each DSI
+## thank you to Marek Blat for the FileData Class
 class FileData(object):
     name = ""
     content = ""
