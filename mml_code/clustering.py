@@ -16,6 +16,8 @@ import matplotlib.pyplot as plt
 #import matplotlib as mpl
 #import mpld3
 
+stopwords = nltk.corpus.stopwords.words('english')
+
 ## this data structure holds info about each DSI
 class FileData(object):
     name = ""
@@ -30,6 +32,10 @@ class FileData(object):
 
     def get_content(self):
         return self.content
+    
+    def get_content_filtered(self):
+        return ' '.join([word for word in self.content.split() if word not in stopwords])
+         
 
 ## extract all file names from a path
 def get_files(path):
@@ -68,6 +74,7 @@ docs = get_txt_file_data(path)
 from nltk.stem.snowball import SnowballStemmer
 stemmer = SnowballStemmer("english")
 
+
 # here I define a tokenizer and stemmer which returns the set of stems in the text that it is passed
 def tokenize_and_stem(text):
     # first tokenize by sentence, then by word to ensure that punctuation is caught as it's own token
@@ -95,14 +102,18 @@ def tokenize_only(text):
 totalvocab_stemmed = []
 totalvocab_tokenized = []
 for i in range(len(docs)):
-    allwords_stemmed = tokenize_and_stem(docs[i].get_content()) #for each item in 'synopses', tokenize/stem
+    allwords_stemmed = tokenize_and_stem(docs[i].get_content_filtered()) #for each item in 'synopses', tokenize/stem
     totalvocab_stemmed.extend(allwords_stemmed) #extend the 'totalvocab_stemmed' list
     
-    allwords_tokenized = tokenize_only(docs[i].get_content())
+    allwords_tokenized = tokenize_only(docs[i].get_content_filtered())
     totalvocab_tokenized.extend(allwords_tokenized)
 
 vocab_frame = pd.DataFrame({'words': totalvocab_tokenized}, index = totalvocab_stemmed)
 print('there are ' + str(vocab_frame.shape[0]) + ' items in vocab_frame')
+
+## removes stopwords 
+## filter_df = vocab_frame.index.isin(stopwords)
+## vocab_frame = vocab_frame[~filter_df]
 
 ## Create tf-idf matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -120,13 +131,13 @@ tfidf_vectorizer = TfidfVectorizer(stop_words='english'
 ## need to extract content and names from data structure
 doc_content = []
 for doc in docs:
-    doc_content.append(doc.get_content())
+    doc_content.append(doc.get_content_filtered())
 
 doc_name = []
 for doc in docs:
     doc_name.append(doc.get_name())
 
-tfidf_matrix = tfidf_vectorizer.fit_transform(doc_content) #fit the vectorizer to synopses
+tfidf_matrix = tfidf_vectorizer.fit_transform(doc_content) #fit the vectorizer to content
 print(tfidf_matrix.shape)
 
 terms = tfidf_vectorizer.get_feature_names()
