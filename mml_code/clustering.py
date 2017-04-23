@@ -26,13 +26,16 @@ class FileData(object):
     def __init__(self, name, content):
         self.name = name
         self.content = content
-
+    
+    ## holds the names of each DSI
     def get_name(self):
         return self.name
-
+    
+    ## holds the raw content
     def get_content(self):
         return self.content
     
+    ## returns content without stopwords. Probably does not scale well.
     def get_content_filtered(self):
         return ' '.join([word for word in self.content.split() if word not in stopwords])
          
@@ -146,13 +149,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 dist = 1 - cosine_similarity(tfidf_matrix)
 
 from sklearn.cluster import KMeans
-
 num_clusters = 4
-
-km = KMeans(n_clusters=num_clusters)
-
+## runs cluster
+km = KMeans(n_clusters=num_clusters
+            ,random_state=42
+            ,max_iter = 1000) 
 km.fit(tfidf_matrix)
-
 clusters = km.labels_.tolist()
 
 doc_dict = { 'DSI': doc_name, 'content': doc_content, 'cluster': clusters}
@@ -188,7 +190,9 @@ from scipy.cluster.hierarchy import ward, dendrogram
 linkage_matrix = ward(dist) #define the linkage_matrix using ward clustering pre-computed distances
 
 fig, ax = plt.subplots(figsize=(15, 20)) # set size
-ax = dendrogram(linkage_matrix, orientation="right", labels=doc_name);
+ax = dendrogram(linkage_matrix
+                ,orientation="right"
+                ,labels=doc_name)
 
 plt.tick_params(\
     axis= 'x',          # changes apply to the x-axis
