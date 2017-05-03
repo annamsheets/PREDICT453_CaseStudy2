@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[9]:
+# In[2]:
 
 import nltk
 from textblob import TextBlob as tb
@@ -15,7 +15,7 @@ import matplotlib
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[17]:
+# In[3]:
 
 #http://stevenloria.com/finding-important-words-in-a-document-using-tf-idf/
 
@@ -43,7 +43,7 @@ def tfidf(word, blob, bloblist):
     return tf2(word, blob) * idf(word, bloblist)
 
 
-# In[50]:
+# In[4]:
 
 import sys
 import re
@@ -55,6 +55,11 @@ os.chdir('/users/asheets/Documents/Work_Computer_new/Work_Computer/Grad_School/P
 all_docs = []
 all_docs2 = ""
 blob_list = []
+blob_list_raw = []
+blob_list_bigrams = []
+blob_list_trigrams = []
+blob_list_fourgrams = []
+blob_list_fivegrams = []
 d = 1
 
 cachedStopWords = nltk.corpus.stopwords.words('english')
@@ -76,16 +81,25 @@ for i in range(40):
         all_docs.append({'DSInum': d, 'raw_text': sample, 'noun_phrases_only':
         sample2})
         all_docs2 = all_docs2 + sample2
-        blob_list.append(tb(sample2))
+        blob = tb(sample)
+        blob_list.append(blob)
+        blob_list_raw.append(blob)
+        blob_list_bigrams.append(blob.ngrams(n=2))
+        blob_list_trigrams.append(blob.ngrams(n=3))
+        blob_list_fourgrams.append(blob.ngrams(n=4))
+        blob_list_fivegrams.append(blob.ngrams(n=5))
         d = d + 1
     except IOError:
         d = d + 1
         pass
 
 all_documents = pd.DataFrame(all_docs)
+DSI_list = all_documents['DSInum']
+
+#all_documents.head(n=5)
 
 
-# In[63]:
+# In[ ]:
 
 #compare my article
 blob1 = tb(all_documents['noun_phrases_only'][23])
@@ -119,7 +133,7 @@ df_final = df_final.round(4)
 df_final.sort_values(by=['tf_idf_doc1'], ascending=[False]).head(n=10)
 
 
-# In[27]:
+# In[ ]:
 
 ##Compare just the two articles we know to be similar
 blob2 = tb(all_documents['noun_phrases_only'][27])
@@ -148,59 +162,128 @@ two_tfidf = two_tfidf.sort_values(by=['tf_idf_doc1', 'tf_idf_doc2'], ascending=[
 two_tfidf.head(n=15)
 
 
-# In[22]:
+# In[ ]:
 
 #compare all DSIs sing all pre-defined functions
-DSI_list = all_documents["DSInum"]
 for i, blob in enumerate(blob_list):
     print("Top words in document {}".format(DSI_list[i]))
-    scores = {word: tfidf(word, blob, blob_list) for word in blob.words}
+    scores = {word: tfidf(word, blob, blob_list_raw) for word in blob.words}
     sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     for word, score in sorted_words[:10]:
         print("\tWord: {}, TF-IDF: {}".format(word, round(score, 5)))
-        
-        
+             
 
 
-# In[80]:
+# In[16]:
 
-RTV = pd.read_csv('RTV.txt',header=None)
-RTV.columns = ['word']
+RTV = pd.read_table('RTV_new.txt',sep='\t')
+unigrams = RTV.loc[RTV['Word_Count'] == 1]
 
-RTVblob = tb(str(tuple(RTV.word.tolist())).replace("'", ""))
-RTV_final = list(RTV['word'])
+RTV_final = list(unigrams['Term'])
+
+#RTVblob = tb(str(tuple(RTV.Term.tolist())).replace("'", ""))
+#print RTV_final
 
 tf_list = []
 
-for i, blob in enumerate(blob_list):
+for i, blob in enumerate(blob_list_raw):
     for item in RTV_final:
-        tf_list.append({'DSInum': DSI_list[i], 'word': item, 'term_freq': blob.words.count(item)})
+        tf_list.append({'DSInum': DSI_list[i], 'Term': item, 'term_freq': blob.words.count(item.lower())})
 
 #print pd.DataFrame(tf_list)
 tf_df = pd.DataFrame(tf_list)
-tf_df.to_csv("RTV_frequencies.txt", sep='\t')
 
-new_tf = tf_df[tf_df['DSInum'] == 24]
-new_tf = new_tf[["word","term_freq"]]
 
-for i in range(1,38):
+# In[17]:
+
+#for the bigrams, trigrams, fourgrams and fivegrams
+bigrams_tmp = RTV.loc[RTV['Word_Count'] == 2]
+RTV_final = list(bigrams_tmp['Term'])
+
+tf_list2 = []
+for item in RTV_final:
+    for i in range(len(blob_list_bigrams)):
+        term_freq = 0
+        for k in range(len(blob_list_bigrams[i])):
+            bigram = ' '.join(str(elem.lower()) for elem in blob_list_bigrams[i][k]).lstrip()
+            if item.lower() in bigram: 
+                term_freq = term_freq + 1
+        tf_list2.append({'DSInum': DSI_list[i], 'Term': item.lower(), 'term_freq': term_freq})
+
+
+tf_df2 = pd.DataFrame(tf_list2)
+
+
+# In[18]:
+
+#for the bigrams, trigrams, fourgrams and fivegrams
+trigrams_tmp = RTV.loc[RTV['Word_Count'] == 3]
+RTV_final = list(trigrams_tmp['Term'])
+
+tf_list3 = []
+for item in RTV_final:
+    for i in range(len(blob_list_trigrams)):
+        term_freq = 0
+        for k in range(len(blob_list_trigrams[i])):
+            trigram = ' '.join(str(elem.lower()) for elem in blob_list_trigrams[i][k]).lstrip()
+            if item.lower() in trigram: 
+                term_freq = term_freq + 1
+        tf_list3.append({'DSInum': DSI_list[i], 'Term': item.lower(), 'term_freq': term_freq})
+
+tf_df3 = pd.DataFrame(tf_list3)
+
+
+# In[19]:
+
+#for the bigrams, trigrams, fourgrams and fivegrams
+fourgrams_tmp = RTV.loc[RTV['Word_Count'] == 4]
+RTV_final = list(fourgrams_tmp['Term'])
+
+tf_list4 = []
+for item in RTV_final:
+    for i in range(len(blob_list_fourgrams)):
+        term_freq = 0
+        for k in range(len(blob_list_fourgrams[i])):
+            fourgram = ' '.join(str(elem.lower()) for elem in blob_list_fourgrams[i][k]).lstrip()
+            if item.lower() in fourgram: 
+                term_freq = term_freq + 1
+        tf_list4.append({'DSInum': DSI_list[i], 'Term': item.lower(), 'term_freq': term_freq})
+
+tf_df4 = pd.DataFrame(tf_list4)
+
+
+# In[25]:
+
+tf_df_final = tf_df.append([tf_df2, tf_df3,tf_df3])
+
+RTV['Term'] = RTV['Term'].str.lower()
+tf_df_final['Term'] = tf_df_final['Term'].str.lower()
+
+tf_df_final2 = pd.merge(tf_df_final,RTV,on='Term',how='inner')
+tf_df_agg = tf_df_final2.groupby(['DSInum', 'EC']).sum()
+tf_df_agg.to_csv("RTV_frequencies.txt", sep='\t')
+
+
+# In[26]:
+
+tf_df3 = pd.read_table('RTV_frequencies.txt',sep='\t')
+new_tf = tf_df3[tf_df3['DSInum'] == 1]
+new_tf = new_tf[["EC","term_freq"]]
+
+for i in range(1,39):
     try:
-        tmp = tf_df[tf_df['DSInum'] == DSI_list[i]]
-        tmp = tmp[["word","term_freq"]]
-        new_tf = pd.merge(new_tf, tmp, on='word', how='outer')
+        tmp = tf_df3[tf_df3['DSInum'] == DSI_list[i]]
+        tmp = tmp[["EC","term_freq"]]
+        new_tf = pd.merge(new_tf, tmp, on='EC', how='outer')
     except IOError:
         pass  
 
 
-my_columns = ["word"]
+my_columns = ["EC"]
 for i in DSI_list:
     my_columns.append('DSI' + str(i))
 new_tf.columns = my_columns
-new_tf.to_csv("RTV_frequencies2.txt", sep='\t')
-
-
-# In[79]:
-
+new_tf.to_csv("RTV_frequencies_final.txt", sep='\t')
 new_tf
 
 
