@@ -254,7 +254,7 @@ tf_df4 = pd.DataFrame(tf_list4)
 
 # In[25]:
 
-tf_df_final = tf_df.append([tf_df2, tf_df3,tf_df3])
+tf_df_final = tf_df.append([tf_df2, tf_df3,tf_df4])
 
 RTV['Term'] = RTV['Term'].str.lower()
 tf_df_final['Term'] = tf_df_final['Term'].str.lower()
