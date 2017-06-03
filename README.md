@@ -10,3 +10,5 @@ The RTV file now includes both noun phrases from Cohort 7, added noun phrases fr
 # Note
 This isn't an official thing, it's just something I created to keep track of what I was using and make it easier to share. :) . Thanks for looking! --Anna
 
+Additional note:  If you're interested reading more about what went into this project, you can find the slides here: https://docs.google.com/presentation/d/1RC4oj9_ipD-ej31JdEo4JFKtVKAiWZIwWCU54WUfRB8/edit#slide=id.p4
+
