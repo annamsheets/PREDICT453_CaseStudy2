@@ -20,6 +20,8 @@ import pydotplus
 import matplotlib.pyplot as plt
 from IPython.display import Image
 import datetime as dt
+import seaborn as sns
+
 
 ## folder with data
 os.chdir("C:/Users/matth/Desktop/MSPA/453")
@@ -204,17 +206,13 @@ plt.legend(loc="lower right")
 plt.show()       
     
 ## This plots the AUC from each model for inspection
-auc_series = pd.Series(auc_list, index = list(range(3,len(auc_list)+3)))
-plt.figure()
-lw = 2
-plt.plot(auc_series
-         ,lw=lw
-         ,color='darkorange')
-plt.title('ROC Curve Area 3 - {0} Topics'.format(NUM_TOPICS))
-plt.xlabel('Number of Topics')
-plt.ylabel('AUC')
-plt.show()
-    
+ax = sns.barplot(x = auc_series.index.values.tolist()
+            , y = auc_series
+            , color = 'darkorange')
+ax.set(xlabel='Number of Topics'
+       , ylabel='AUC'
+       , title = 'ROC Curve Area 3 - {0} Topics'.format(NUM_TOPICS) )
+
 ## create decision tree chart for 8 topic model
 dot_data = tree.export_graphviz(model_list[5], out_file=None
                                 , filled = True
@@ -222,6 +220,8 @@ dot_data = tree.export_graphviz(model_list[5], out_file=None
                                 , class_names = ['Booked','Not Booked']) 
 graph = pydotplus.graph_from_dot_data(dot_data) 
 Image(graph.create_png())  
+
+s
 
 ## This was used to create the ECs
 ## Leveraging code from http://brandonrose.org/clustering
