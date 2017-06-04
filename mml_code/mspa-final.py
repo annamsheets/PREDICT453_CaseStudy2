@@ -206,6 +206,7 @@ plt.legend(loc="lower right")
 plt.show()       
     
 ## This plots the AUC from each model for inspection
+auc_series = pd.Series(auc_list, index = list(range(3,11))
 ax = sns.barplot(x = auc_series.index.values.tolist()
             , y = auc_series
             , color = 'darkorange')
@@ -220,8 +221,6 @@ dot_data = tree.export_graphviz(model_list[5], out_file=None
                                 , class_names = ['Booked','Not Booked']) 
 graph = pydotplus.graph_from_dot_data(dot_data) 
 Image(graph.create_png())  
-
-s
 
 ## This was used to create the ECs
 ## Leveraging code from http://brandonrose.org/clustering
